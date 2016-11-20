@@ -1,0 +1,908 @@
+<html lang="en" ng-app="eazyFox"  ng-cloak class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ByteNub</title>
+
+    <meta name="description" content="{{ metaservice.metaDescription() }}">
+    <meta name="keywords" content="{{metaservice.metaKeywords() }}"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="/">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/gsdk.css"/>
+    <link rel="stylesheet" href="/assets/css/demo.css"/>
+    <link rel="stylesheet" href="/assets/css/pe-icon-7-stroke.css" />
+    <link rel="stylesheet" href="/assets/css/app.css"/>
+    <link rel="icon" href="assets/img/eazyfox_icon_small.png" type="image/gif"
+          sizes="16x16">
+    <!--     Fonts and icons     -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+          rel="stylesheet">
+    <link href='//fonts.googleapis.com/css?family=Grand+Hotel|Open+Sans:400,300'
+          rel='stylesheet' type='text/css'>
+    <style>
+        .navbar-brand span {
+            padding-top: 16px;
+            color: #FC601A !important;
+            font-weight: 300;
+            text-align: right !important;
+            font-size: 14px;
+            float: right;
+            margin-right: -11px;
+        }
+
+        .navbar-kd-blue .navbar-brand span {
+            color: #fff !important;
+            padding-top: 6px;
+            margin-right: 47px;
+            font-size: 13px;
+        }
+
+        .navbar-kd-blue i {
+            display: none;
+        }
+    </style>
+<body class="home">
+<div class="wrapper">
+    <nav class="navbar navbar-ct-azure   navbar-icons navbar-fixed-top navbar-inverse navbar-white "
+         role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#navigation-example-2">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">
+
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navigation-example-2">
+
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li>
+                        <a href="/">
+                            <i class="pe-7s-home"></i>
+                            <p>Home</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://blog.eazyfox.com" target="_blank">
+                            <i class="pe-7s-news-paper"></i>
+                            <p>Blogs</p>
+                        </a>
+                    </li>
+                    <li uib-tooltip="Management Questions & Answers"
+                        tooltip-placement="bottom" tooltip-class="blue">
+                        <a href="/eazy-answer">
+                            <i class="pe-7s-help1"></i>
+                            <p>Eazy Answers</p>
+                        </a>
+                    </li>
+                    <li uib-tooltip="Management Questions & Answers"
+                        tooltip-placement="bottom" tooltip-class="blue">
+                        <a href="/browse/projects">
+                            <i class="pe-7s-box1"></i>
+                            <p>Browse Projects</p>
+                        </a>
+                    </li>
+
+                    <li uib-tooltip="Post A Project"
+                        tooltip-placement="bottom" tooltip-class="blue">
+                        <a href="/business/project/post">
+                            <i class="pe-7s-box1"></i>
+                            <p>Post Projects</p>
+                        </a>
+                    </li>
+
+                    <li class="dropdown" ng-if="!AuthService.isLoggedIn()">
+                        <a href="javascript:void" class="dropdown-toggle"
+                           data-toggle="dropdown">
+                            <i class="pe-7s-users"></i>
+                            <p>Login
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a ng-href="/business/login">Business Login</a></li>
+                            <li><a ng-href="/expert/login">Expert Login</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown" ng-if="!AuthService.isLoggedIn()">
+                        <a href="javascript:void" class="dropdown-toggle"
+                           data-toggle="dropdown">
+                            <i class="pe-7s-plus"></i>
+                            <p>Sign Up
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/business/sign-up">Business SignUp</a>
+                            </li>
+                            <li><a href="/expert/sign-up">Expert SignUp</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="javascript:void" class="dropdown-toggle"
+                           data-toggle="dropdown">
+                            <i class="pe-7s-user"></i>
+                            <p>Hello
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="/expert/dashboard"> Dashboard</a></li>
+                            <li>
+                                <a href="/business/dashboard"> Dashboard</a></li>
+                            <li>
+                                <a href="/expert/dashboard/profile/edit">Edit Profile</a></li>
+                            <!-- <li class="divider"></li>-->
+                            <li><a href='javascript:void'
+                                   >Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div><!-- /.navbar-collapse -->
+
+        </div><!-- /.container-fluid -->
+    </nav>
+<style>
+    .description h4 {
+        margin-bottom: -3px;
+    }
+
+    .description p {
+        font-size: 21px;
+    }
+</style>
+<div style="clear:both"></div>
+
+<div class="parallax header" style="background:#3863a0 !important;"
+     id="large-header">
+    <canvas id="demo-canvas"></canvas>
+    <div class="small-info" style="position: absolute;top: -1%;">
+        <h1 style="text-transform: capitalize" class="hidden-xs"><span class="typewriter"></span></h1>
+        <h3>
+            <small style="font-size:100%;color:#E0E0E0">Get instant access to
+                the
+                network of 5000+ top business experts holding an<br/>
+                MBA from top 40 B schools of the world for your most important
+                projects.
+            </small>
+        </h3>
+        <br/>
+        <a class="btn  btn-lg btn-orange" ng-href="/business/project/post"
+           uib-tooltip="For Business" tooltip-class="orange">Post a Project</a>
+        <b style="margin-left:8px;margin-right:13px;font-size: 23px;font-weight: normal;" class="hidden-xs">
+            Or </b>
+        <a class="btn  btn-lg btn-green" ng-href="/expert/sign-up"
+           uib-tooltip="Expert SignUp" tooltip-class="green">Apply as a Business
+            Expert</a>
+        <br/>
+        <div style="clear:both"></div>
+        <br/>
+    </div>
+    <div style="clear:both"></div>
+</div>
+
+<div class="subscribe-line subscribe-line-transparent"
+     style="background-image: url('assets/img/o-BUSINESS-MEETING-facebook.jpg')">
+    <div class="container">
+        <div style="clear:both"></div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="info info-horizontal">
+                    <div class="icon  icon-sm icon-trans-background">
+                        <i class="pe-7s-culture"></i>
+                    </div>
+                    <div class="description">
+                        <h4><span class="count">900</span>+</h4>
+                        <p>Business Users.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="info info-horizontal">
+                    <div class="icon icon-trans-background icon-sm">
+                        <i class="pe-7s-portfolio"></i>
+                    </div>
+                    <div class="description">
+                        <h4><span class="count">5000</span>+ </h4>
+                        <p>Business Expert.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="info info-horizontal">
+                    <div class="icon icon-trans-background icon-sm">
+                        <i class="pe-7s-box1"></i>
+                    </div>
+                    <div class="description">
+                        <h4><span class="count">50</span>+ </h4>
+                        <p>Live Projects.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="info info-horizontal">
+                    <div class="icon icon-trans-background icon-sm">
+                        <i class="pe-7s-help1sd">$</i>
+                    </div>
+                    <div class="description">
+                        <h4><span class="count">3</span> M </h4>
+                        <p>Worth Projects.</p>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end row info-horizontal -->
+    </div>
+</div>
+
+<div class="container">
+    <div class="section section-features-1">
+        <div class="container">
+            <h2 class="section-title">Find out
+                <small>how EazyFox can help your:</small>
+            </h2>
+            <div class="row">
+                <div class="col-lg-4 kd-cards">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-3 col-xs-3">
+                            <i class="fa fa-rocket" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-lg-9 col-sm-9 col-xs-9">
+                            <h2>StartUp</h2>
+                            <a href="javascript:void">Explore more >></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 kd-cards">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-3 col-xs-3">
+                            <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-lg-9 col-sm-9 col-xs-9">
+                            <h2>Small Business</h2>
+                            <a href="javascript:void">Explore more >></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 kd-cards">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-3 col-xs-3">
+                            <i class="fa fa-plane"></i>
+                        </div>
+                        <div class="col-lg-9  col-sm-9 col-xs-9">
+                            <h2>Medium Business</h2>
+                            <a href="javascript:void">Explore more >></a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 kd-cards">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-3 col-xs-3">
+                            <i class="fa fa-space-shuttle"></i>
+                        </div>
+                        <div class="col-lg-9  col-sm-9 col-xs-9">
+                            <h2>Large Business</h2>
+                            <a href="javascript:void">Explore more >></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 kd-cards">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-3 col-xs-3">
+                            <i class="fa fa-group"></i>
+                        </div>
+                        <div class="col-lg-9  col-sm-9 col-xs-9">
+                            <h2>Consulting Firm</h2>
+                            <a href="javascript:void">Explore more >></a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 kd-cards">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-3 col-xs-3">
+                            <i class="fa fa-money"></i>
+                        </div>
+                        <div class="col-lg-9  col-sm-9 col-xs-9">
+                            <h2>Investment Firm</h2>
+                            <a href="javascript:void">Explore more >></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- section -->
+    <div class="section section-features-1 hidden-xs">
+        <div class="container">
+            <h2 class="section-title">Work
+                <small>Process:</small>
+            </h2>
+            <p>A diverse network of top freelance business experts with MBA from
+                world`s top 40 B-Schools offering value similar to top
+                consulting firms but for a fraction of cost.</p>
+            <div class="row work-process">
+                <div class="icon-process-outer"
+                     uib-tooltip="Businesses Will POST Project"
+                     tooltip-class="blue">
+                    <div class="col-md-3 icon-process">
+                        <i class="pe-7s-note" aria-hidden="true"></i>
+                        <h4>Post Project</h4>
+                    </div>
+                </div>
+
+                <div class="icon-process-outer"
+                     uib-tooltip="Our Experts From TOP B Schools Will Bid Project"
+                     tooltip-class="blue">
+                    <div class="col-md-3 icon-process">
+                        <i class="pe-7s-speaker" aria-hidden="true"></i>
+                        <h4>Receive Bids</h4>
+                    </div>
+                </div>
+
+                <div class="icon-process-outer"
+                     uib-tooltip="Business Will Accept Bid Based on their proposal"
+                     tooltip-class="blue">
+                    <div class="col-md-3 icon-process">
+                        <i class="pe-7s-star" aria-hidden="true"></i>
+                        <h4>Select Business Expert</h4>
+                    </div>
+                </div>
+
+                <div class="icon-process-outer"
+                     uib-tooltip="Your Project is Done" tooltip-class="blue">
+                    <div class="col-md-3 icon-process">
+                        <i class="pe-7s-check" aria-hidden="true"></i>
+                        <h4>Get Project Done</h4>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div><!-- section -->
+</div>
+
+<div class="subscribe-line subscribe-line-transparent statistics "
+     style="background-image: url('assets/img/o-BUSINESS-MEETING-facebook.jpg')">
+
+    <div class="container">
+        <h2 class="section-title">Our
+            <small>business consultants:</small>
+        </h2>
+        <p>A diverse network of top freelance business experts with MBA from
+            world`s top 40 B-Schools offering value similar to top consulting
+            firms but for a fraction of cost.</p>
+
+        <!-- Status Eight Starts -->
+        <div class="status-eight">
+            <div class="row">
+                <div class="col-md-4 col-sm-12 col-xs-12 col-mob">
+                    <!-- Item -->
+                    <div class="item">
+                        <!-- Heading -->
+
+                        <!-- Big Number -->
+                        <h4 class="lblue"><span class="count">99</span>% <em>Satisfaction
+                            rate</em></h4>
+                        <h5></h5>
+                        <!-- Small Title -->
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12 col-mob">
+                    <!-- Item -->
+                    <div class="item">
+                        <!-- Heading -->
+
+                        <!-- Big Number -->
+                        <h4 class="lblue"><span class="count">95</span>% <em>MBA
+                            from world`s top 40 B-Schools </em></h4>
+                        <h5></h5>
+                        <!-- Small Title -->
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12 col-mob">
+                    <!-- Item -->
+                    <div class="item" 3
+                    <!-- Heading -->
+                    <!-- Big Number -->
+                    <h4 class="lblue"><span class="count">40</span> <em>Countries
+                        worked in</em></h4>
+                    <h5></h5>
+
+                    <!-- Small Title -->
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-12 col-xs-12 col-mob">
+                <!-- Item -->
+                <div class="item">
+                    <!-- Big Number -->
+                    <h4 class="lblue"><span class="count">8</span>+ <em>Years
+                        average experience</em></h4>
+                    <h5></h5>
+                    <!-- Small Title -->
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-12 col-xs-12 col-mob">
+                <!-- Item -->
+                <div class="item">
+                    <!-- Big Number -->
+                    <h4 class="lblue"><span class="count">80</span>% <em>Worked
+                        in Fortune 500 Companies</em></h4>
+                    <h5></h5>
+                    <!-- Small Title -->
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-12 col-xs-12 col-mob">
+                <!-- Item -->
+                <div class="item">
+                    <!-- Big Number -->
+                    <h4 class="lblue"><span class="count">10</span> <em>Average
+                        Bids on project</em></h4>
+                    <h5></h5>
+                    <!-- Small Title -->
+                </div>
+            </div>
+
+        </div>
+        <div class="separator"></div>
+
+        <!-- UI # -->
+        <div class="ui-268">
+            <h2 class="section-title">EazyFox
+                <small>around globe:</small>
+            </h2>
+            <!-- UI content -->
+            <div class="block-content bg-lblue">
+                <div class="map-area">
+                    <!-- Map Image -->
+                    <img class="img-responsive"
+                         src="assets/img/map_dotted_2.png" alt=""/>
+                    <!-- Map marker with image -->
+                    <div class="map-mark mark-one">
+                        <div class="mark-content">
+                            <span><b>20%</b> South America</span>
+                            <!--
+                                            <p class="text-content">#45/8 New Colony,<br>Lake City Garden Venue,<br>USA-343212</p>
+                            -->
+                        </div>
+                        <a href="javascript:void"><i
+                                class="fa fa-map-marker"></i></a>
+                    </div>
+                    <div class="map-mark mark-two">
+                        <div class="mark-content">
+                            <span><b>30%</b> Europe.</span>
+                        </div>
+                        <a href="javascript:void"><i
+                                class="fa fa-map-marker red"></i></a>
+                    </div>
+                    <div class="map-mark mark-three">
+                        <div class="mark-content">
+                            <span><b>15%</b> North America</span>
+                        </div>
+                        <a href="javascript:void"><i
+                                class="fa fa-map-marker red"></i></a>
+                    </div>
+                    <div class="map-mark mark-four">
+                        <div class="mark-content">
+                            <span><b>35%</b> Asia Pacific</span>
+                        </div>
+                        <a href="javascript:void"><i
+                                class="fa fa-map-marker red"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Container Ends Ends -->
+
+</div>
+<!--Subscribe line ends-->
+</div>
+
+<div class="container">
+    <div class="section section-features-1">
+        <div class="container">
+            <h2 class="section-title">Why
+                <small>Use EazyFox:</small>
+            </h2>
+            <div class="row">
+                <div class="col-lg-6 kd-cards-2">
+                    <h2><i class="pe-7s-study" aria-hidden="true"></i> Access
+                        Top Business Experts</h2>
+                    <p>Our Network of 5000+ Top business experts comprise of the
+                        best business minds from the Top 40 B
+                        schools offering differing skills and expertise,
+                        enabling you to avoid relying on in-house capabilities
+                        and cherry pick the exact talent you need with the
+                        required skill-set for your most important
+                        project.</p>
+                </div>
+                <div class="col-lg-6 kd-cards-2">
+                    <h2><i class="pe-7s-graph2" aria-hidden="true"></i> Get
+                        Fantastic Work</h2>
+                    <p>We enable clients to engage with our top business experts
+                        directly while removing existing overheads and
+                        inefficiencies existing in traditional management
+                        consultancy firms. Therefore, we enable clients get
+                        fantastic work at a fraction of the prices.</p>
+                </div>
+
+                <div class="col-lg-6 kd-cards-2">
+                    <h2><i class="pe-7s-chat" aria-hidden="true"></i> Ease Of
+                        Communication</h2>
+                    <p>Our advanced easy to use digital platform is made
+                        according to your consulting needs, ensuring seamless
+                        interaction between business and expert, while
+                        streamlining project deliverables, invoicing, contracts,
+                        or
+                        payments through our secure and safe platform.</p>
+                </div>
+
+                <div class="col-lg-6 kd-cards-2">
+                    <h2><i class="pe-7s-cup" aria-hidden="true"></i> Superior
+                        Work</h2>
+                    <p>EazyFox has top business experts across every industry
+                        from finance to FMCGs, having tried and tested
+                        record of brilliance and considered among the best
+                        business minds in the industry, to offer value to
+                        companies of any size.</p>
+                </div>
+
+
+            </div>
+        </div>
+    </div><!-- section -->
+
+</div>
+
+
+<div class="parallax header question" style="background:#3863a0 !important;">
+
+
+    <div class="small-info">
+        <h1>Not ready to post a project yet?</h1>
+        <h3>
+            <small style="font-size:100%;color:#E0E0E0">Subscribe to our
+                newsletter and get up-to-date information from
+                Eazyfox.
+            </small>
+        </h3>
+        <br/>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <form class="" ng-submit="subscribeToNewsLetter()"  ng-show="!displaySubscriptionSuccessMsg">
+                        <div class="input-group">
+                            <input type="text" value="" class="form-control"
+                                   placeholder="Enter your email here..."
+                                   ng-model="email" required>
+                            <div class="input-group-btn">
+                                <button type="submit"
+                                        ng-disabled="showButtonLoad"
+                                        class="btn btn-orange btn-fill btn-block">
+                                    <img ng-if="showButtonLoad"
+                                         style="margin-bottom: -6px;margin-top: -7px;"
+                                         src="assets/img/eazyfox_icon_bw_small.png"
+                                         class="small-loader"/> Subscribe Now!
+                                </button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <br/>
+
+
+        <br/>
+    </div>
+    <div style="clear:both"></div>
+</div>
+
+<div class="section section-testimonials">
+    <div class="container">
+        <h2 class="section-title">What people think...</h2>
+        <div id="testimonials-carousel" class="carousel slide" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="col-md-3">
+                                <div class="card card-user card-plain">
+                                    <!-- <div class="image"></div> -->
+                                    <div class="content">
+                                        <div class="author">
+                                            <img class="avatar border-gray" src="../assets/img/default-avatar.png"
+                                                 alt="...">
+                                            <h4 class="title text-center">Marks Zukerburg<br>
+                                                <small>CEO @ Facebook</small>
+                                            </h4>
+                                        </div>
+                                        <!--     <p class="description text-center">
+                                               <i class="fa fa-map-marker fa-fw text-muted"></i> Miami, Florida,  <br>
+                                               <i class="fa fa-building-o fa-fw text-muted"></i> Maybach Music Group <br>
+                                               <i class="fa fa-envelope-o fa-fw text-muted"></i> godforgivesidont.com
+                                             </p>-->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-9 testi">
+                                <h4>I've bought it, and I have to say that it's simply awesome. Creative Tim creates
+                                    awesome looking templates! :)</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="col-md-3">
+                                <div class="card card-user card-plain">
+                                    <!-- <div class="image"></div> -->
+                                    <div class="content">
+                                        <div class="author">
+                                            <img class="avatar border-gray" src="../assets/img/default-avatar.png"
+                                                 alt="...">
+                                            <h4 class="title text-center">Marks Zukerburg<br>
+                                                <small>CEO @ Facebook</small>
+                                            </h4>
+                                        </div>
+                                        <!--     <p class="description text-center">
+                                               <i class="fa fa-map-marker fa-fw text-muted"></i> Miami, Florida,  <br>
+                                               <i class="fa fa-building-o fa-fw text-muted"></i> Maybach Music Group <br>
+                                               <i class="fa fa-envelope-o fa-fw text-muted"></i> godforgivesidont.com
+                                             </p>-->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-9 testi">
+                                <h4>I've bought it, and I have to say that it's simply awesome. Creative Tim creates
+                                    awesome looking templates! :)</h4>
+                            </div>
+                        </div>
+                    </div> <!-- end row -->
+                </div>
+                <div class="item">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="col-md-3">
+                                <div class="card card-user card-plain">
+                                    <!-- <div class="image"></div> -->
+                                    <div class="content">
+                                        <div class="author">
+                                            <img class="avatar border-gray" src="../assets/img/default-avatar.png"
+                                                 alt="...">
+                                            <h4 class="title text-center">Marks Zukerburg<br>
+                                                <small>CEO @ Facebook</small>
+                                            </h4>
+                                        </div>
+                                        <!--     <p class="description text-center">
+                                               <i class="fa fa-map-marker fa-fw text-muted"></i> Miami, Florida,  <br>
+                                               <i class="fa fa-building-o fa-fw text-muted"></i> Maybach Music Group <br>
+                                               <i class="fa fa-envelope-o fa-fw text-muted"></i> godforgivesidont.com
+                                             </p>-->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-9 testi">
+                                <h4>I've bought it, and I have to say that it's simply awesome. Creative Tim creates
+                                    awesome looking templates! :)</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="col-md-3">
+                                <div class="card card-user card-plain">
+                                    <!-- <div class="image"></div> -->
+                                    <div class="content">
+                                        <div class="author">
+                                            <img class="avatar border-gray" src="../assets/img/default-avatar.png"
+                                                 alt="...">
+                                            <h4 class="title text-center">Marks Zukerburg<br>
+                                                <small>CEO @ Facebook</small>
+                                            </h4>
+                                        </div>
+                                        <!--     <p class="description text-center">
+                                               <i class="fa fa-map-marker fa-fw text-muted"></i> Miami, Florida,  <br>
+                                               <i class="fa fa-building-o fa-fw text-muted"></i> Maybach Music Group <br>
+                                               <i class="fa fa-envelope-o fa-fw text-muted"></i> godforgivesidont.com
+                                             </p>-->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-9 testi">
+                                <h4>I've bought it, and I have to say that it's simply awesome. Creative Tim creates
+                                    awesome looking templates! :)</h4>
+                            </div>
+                        </div>
+                    </div> <!-- end row -->
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#testimonials-carousel" data-slide="prev">
+                <span class="fa fa-angle-left"></span>
+            </a>
+            <a class="right carousel-control" href="#testimonials-carousel" data-slide="next">
+                <span class="fa fa-angle-right"></span>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<div class="separator"></div>
+
+
+<footer class="footer footer-big footer-transparent"
+        style="background-image: url('assets/img/o-BUSINESS-MEETING-facebook.jpg')">
+
+    <!-- .footer-black is another class for the footer, for the transparent version, we recommend you to change the url of the image with your favourite image.          -->
+
+    <div class="container">
+        <div class="row" ng-if="location==='/' || location===''">
+            <div class="col-md-5">
+                <h5 class="title">About EazyFox</h5>
+                <p style="font-weight: 300;color: #9A9A9A;">A platform that
+                    enables Startups and SME’s to Hire the top Freelance
+                    business experts holding an MBA from Top 40 B schools of the
+                    world for their most important projects at a fraction of
+                    cost, by getting rid of inefficiencies.</p>
+
+            </div>
+            <div class="col-md-3 col-md-offset-1">
+                <h5 class="title">Company</h5>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                Blog
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Company
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Case Studies
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Terms & Conditions
+                            </a>
+                        </li>
+                        <!--             <li>
+                                         <a href="#">
+                                             About Us
+                                         </a>
+                                     </li>-->
+                        <!--<li>
+                            <a href="#" class="text-info">
+                                We are hiring!
+                            </a>
+                        </li>-->
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-md-3">
+                <h5 class="title">Happy people</h5>
+                <nav class="numbers">
+                    <ul>
+                        <li>
+                            <h4><span class="count">900</span> +
+                                <small>Businesses</small>
+                            </h4>
+                        </li>
+                        <li>
+                            <h4><span class="count">5000</span> +
+                                <small>Experts</small>
+                            </h4>
+                        </li>
+                        <li>
+                            <h4><span class="count">50</span>
+                                <small>Live Projects</small>
+                            </h4>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!-- <p ng-if="location!=='/' || location!==''" class="text-center"
+            style="color:#666"> "Some Random Quote" ~ Vivek</p>-->
+        <br/>
+        <hr style="margin-top:0px" ng-if="location==='/' || location===''"/>
+        <div class="social-area text-center">
+            <h5>We are social</h5>
+            <a href="https://www.facebook.com/EazyFox-277711099238498/"
+               target="_blank"  class="btn btn-social btn-round">
+                <i class="fa fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com/EazyFoxIN"
+               target="_blank" class="btn btn-social btn-round">
+                <i class="fa fa-twitter"></i>
+            </a>
+            <a href="https://plus.google.com/110988392785009288148/posts?hl=en-GB"
+               target="_blank" class="btn btn-social btn-round">
+                <i class="fa fa-google-plus"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/eazyfox"
+               target="_blank" class="btn btn-social btn-round">
+                <i class="fa fa-linkedin"></i>
+            </a>
+        </div>
+
+        <div class="copyright">
+            &copy; 2016 FoxWhiz Technologies Pvt. Ltd.
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
+<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="assets/js/app.js" ></script>
+<script src='/assets/js/gsdk-morphing.js'></script>
+<script src='/assets/js/jquery-ui.custom.min.js'></script>
+<script src='/assets/js/gsdk-bootstrapswitch.js'></script>
+<script src='/assets/js/bootstrap-select.js'></script>
+<script src='/assets/js/bootstrap-datepicker.js'></script>
+<script src='/assets/js/chartist.min.js'></script>
+<script src='/assets/js/get-shit-done.js'></script>
+<script src='/assets/js/demo.js'></script>
+<script src='/assets/js/jquery.sticky-kit.min.js'></script>
+<script src='/assets/js/TweenLite.min.js'></script>
+<script src='/assets/js/EasePack.min.js'></script>
+<script src='/assets/js/typed.min.js'></script>
+
+
+<script type="text/javascript">
+    var big_image;
+    $(document).ready(function () {
+        responsive = $(window).width();
+
+        $(window).on('scroll', gsdk.checkScrollForBlueNavbar);
+
+        if (responsive >= 768) {
+            big_image = $('.parallax-image').find('img');
+
+            $(window).on('scroll', function () {
+                parallax();
+            });
+        }
+    });
+    var parallax = function () {
+        var current_scroll = $(this).scrollTop();
+
+        oVal = ($(window).scrollTop() / 3);
+        big_image.css('top', oVal);
+    };
+
+</script>
