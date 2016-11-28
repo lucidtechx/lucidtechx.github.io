@@ -9,25 +9,26 @@ h1,h2,h3,h4{
 }
 
 .navbar-kd-blue {
-    background-color: #3863a0 !important;
+    background-color: #00B57B!important;
     color: #fff !important;
     height: 60px;
 }
 .form-control{
-    border-color:#3863a0;
+    border-color:#00B57B;
 }
 .navbar-kd-blue .navbar-brand {
     background: url("/assets/img/log_white.png");
     height: 60px;
     width: 220px;
-    background-size: 150px;
+    background-size: 245px;
     background-repeat: no-repeat;
     cursor: pointer;
     -webkit-transition: all 300ms linear;
     -moz-transition: all 300ms linear;
     -o-transition: all 300ms linear;
     -ms-transition: all 300ms linear;
-    transition: all 300ms linear
+    transition: all 300ms linear;
+        margin-top: 12px !important;
 }
 
 .navbar-kd-blue .container .navbar-collapse .navbar-right {
@@ -40,8 +41,8 @@ h1,h2,h3,h4{
 
 .navbar-white {
     background-color: #fff !important;
-    color: #3863a0 !important;
-    border-bottom: 1px solid #3863a0;
+    color: #00B57B!important;
+    border-bottom: 1px solid #00B57B;
 }
 
 .navbar-white .navbar-brand a {
@@ -52,7 +53,7 @@ h1,h2,h3,h4{
     background: url("/assets/img/logo.png");
     height: 60px;
     width: 220px;
-    background-size: 213px;
+    background-size: 260px;
     background-repeat: no-repeat;
     cursor: pointer;
     -webkit-transition: all 300ms linear;
@@ -63,17 +64,17 @@ h1,h2,h3,h4{
 }
 
 .navbar-white li a {
-    color: #3863a0 !important;
+    color: #00B57B!important;
 }
 
 .navbar-white li a .caret {
-    color: #3863a0 !important;
-    border-bottom-color: #3863a0 !important;
-    border-top-color: #3863a0 !important;
+    color: #00B57B!important;
+    border-bottom-color: #00B57B!important;
+    border-top-color: #00B57B!important;
 }
 
 .navbar-white.navbar .navbar-brand {
-    color: #3863a0 !important;
+    color: #00B57B!important;
 }
 
 .small-nav-blue {
@@ -114,7 +115,7 @@ h1,h2,h3,h4{
 }
 
 .btn-blue {
-    background-color: #3863a0 !important;
+    background-color: #00B57B!important;
     opacity: 1 !important;
     border: none !important;
     color: #fff !important;
@@ -132,7 +133,7 @@ h1,h2,h3,h4{
 }
 
 .btn-orange {
-    background-color: #f16439 !important;
+    background-color: #000 !important;
     opacity: 1 !important;
     border: none !important;
     color: #fff !important;
@@ -187,12 +188,12 @@ h1,h2,h3,h4{
     font-weight: 300;
     display: inline-block;
     padding-bottom: 10px;
-    border-bottom: 1px solid #3863A0;
-    color: #3863A0;
+    border-bottom: 1px solid #00B57B;
+    color: #00B57B;
 }
 
 .section-title small {
-    color: #3863A0;
+    color: #00B57B;
 }
 
 .subscribe-line .section-title {
@@ -217,8 +218,8 @@ h1,h2,h3,h4{
 
 .kd-cards-2 i {
     font-size: 180% !important;
-    border: 1px solid #f16439;
-    color: #f16439;
+    border: 1px solid #000;
+    color: #000;
     border-radius: 70px;
 
     padding: 9px 11px;
@@ -230,23 +231,23 @@ h1,h2,h3,h4{
     margin-top: 12px;
     font-size: 160%;
     margin-bottom: 12px;
-    color: #3863A0;
+    color: #00B57B;
 }
 
 .kd-cards {
     background: #FFF;
     /*border-radius: 6px;*/
-    color: #3863A0;
+    color: #00B57B;
     padding: 25px;
     margin-right: 1.65%;
     margin-left: 1.65%;
     margin-top: 25px;
     width: 30% !important;
-    border: 2px solid #3863A0;
+    border: 2px solid #00B57B;
 }
 
 .kd-cards:hover {
-    background: #f16439;
+    background: #000;
     color: #fff;
     border: 2px solid #fff;
     -webkit-transition: background-color 100ms ease-out 100ms;
@@ -266,7 +267,7 @@ h1,h2,h3,h4{
 
 .kd-cards a {
     margin-top: 5px;
-    color: #f16439;
+    color: #000;
 }
 
 .kd-cards h2 {
@@ -286,7 +287,7 @@ h1,h2,h3,h4{
     font-weight: 400;
     margin: 0px;
     line-height: 40px;
-    color: #f16439;
+    color: #000;
 }
 
 .status-eight .item h5 {
@@ -337,7 +338,7 @@ h1,h2,h3,h4{
 }
 
 .ui-268 .map-area .map-mark i {
-    color: #f16439;
+    color: #000;
 }
 
 .ui-268 .map-area .map-mark.mark-one {
@@ -398,7 +399,7 @@ h1,h2,h3,h4{
 
 .ui-268 .map-area .mark-content span b {
     font-size: 23px;
-    color: #f16439;
+    color: #000;
     font-weight: normal;
 }
 
@@ -453,7 +454,7 @@ h1,h2,h3,h4{
 #testimonials-carousel .card .title {
     font-size: 14px !important;
     line-height: 15px !important;
-    color: #F16439 !important;
+    color: #000 !important;
     /*
     margin-left: 20px !important;
     */
@@ -506,7 +507,7 @@ h1,h2,h3,h4{
     padding: 28px 0px !important;
 
     background-color: #f4f6f7;
-    color: #3863A0;
+    color: #00B57B;
     margin: -6.6px;
 }
 
@@ -628,7 +629,7 @@ h1,h2,h3,h4{
 
 .eazy-answers .up-down i:hover, .question .up-down i:hover, .answer .up-down i:hover {
     font-weight: bold;
-    color: #F16439 !important;
+    color: #000 !important;
 }
 
 .eazy-answers .up-down p, .question .up-down p, .answer .up-down p {
@@ -639,8 +640,8 @@ h1,h2,h3,h4{
 
 .select-blue {
     width: auto;
-    border-color: #3863A0;
-    color: #3863A0;
+    border-color: #00B57B;
+    color: #00B57B;
     /*
             font-weight: bold;
     */
@@ -651,51 +652,51 @@ h1,h2,h3,h4{
 }
 
 .select-blue .caret {
-    border-top-color: #3863A0;
+    border-top-color: #00B57B;
 }
 
 /*TOOLTIP COLORS*/
 .blue .tooltip-inner {
-    background: #3863a0;
+    background: #00B57B;
     color: #fff;
 }
 
 .blue.bottom .tooltip-inner:after {
-    border-bottom-color: #3863a0;
+    border-bottom-color: #00B57B;
 }
 
 .blue.top .tooltip-inner:after {
-    border-top-color: #3863a0;
+    border-top-color: #00B57B;
 }
 
 .blue.left .tooltip-inner:after {
-    border-left-color: #3863a0;
+    border-left-color: #00B57B;
 }
 
 .blue.right .tooltip-inner:after {
-    border-right-color: #3863a0;
+    border-right-color: #00B57B;
 }
 
 .orange .tooltip-inner {
-    background: #f16439;
-    background-color: #f16439 !important;
+    background: #000;
+    background-color: #000 !important;
     color: #fff !important;
 }
 
 .orange.top .tooltip-inner:after {
-    border-top-color: #f16439;
+    border-top-color: #000;
 }
 
 .orange.bottom .tooltip-inner:after {
-    border-bottom-color: #f16439;
+    border-bottom-color: #000;
 }
 
 .orange.left .tooltip-inner:after {
-    border-left-color: #f16439;
+    border-left-color: #000;
 }
 
 .orange.right .tooltip-inner:after {
-    border-right-color: #f16439;
+    border-right-color: #000;
 }
 
 .green .tooltip-inner {
@@ -736,11 +737,11 @@ h1,h2,h3,h4{
 }
 
 .sign-up-form label {
-    color: #3863A0;
+    color: #00B57B;
 }
 
 .sign-up .btn-group .actv {
-    background: #3863A0;
+    background: #00B57B;
     color: white;
     opacity: 1;
 }
@@ -792,22 +793,22 @@ h1,h2,h3,h4{
 }
 
 .add-info-card {
-    border: 1px solid #3863A0;
+    border: 1px solid #00B57B;
     padding-top: 13px;
     padding-bottom: 13px;
 }
 
 .add-info-card .form-group label {
-    color: #3863A0;
+    color: #00B57B;
     font-size: 15px;
     font-weight: 300;
     padding-left: 1px;
 }
 
 .blue-form-control {
-    border: 1px solid #3863A0;
+    border: 1px solid #00B57B;
     border-radius: 0px;
-    color: #3863A0;
+    color: #00B57B;
 }
 
 .blue-form-control:focus {
@@ -815,8 +816,8 @@ h1,h2,h3,h4{
 }
 
 .label-blue {
-    color: #3863A0;
-    border-color: #3863A0;
+    color: #00B57B;
+    border-color: #00B57B;
 }
 
 .label-orange {
@@ -949,16 +950,16 @@ legend {
 }
 
 .timeline .active .primary {
-    background-color: #f16439 !important;
+    background-color: #000 !important;
 }
 
 .timeline .active .tooltip-inner {
-    background-color: #f16439 !important;
+    background-color: #000 !important;
     color: #fff;
 }
 
 .timeline .active .tooltip.right .tooltip-inner:after {
-    border-right: 11px solid #f16439;
+    border-right: 11px solid #000;
 }
 
 .post-project-form label {
@@ -1011,8 +1012,8 @@ legend {
     width: 65.5%;
     padding: 6px;
     border-width: 1px;
-    border-color: #3863A0;
-    color: #3863A0;
+    border-color: #00B57B;
+    color: #00B57B;
     border-radius: 3px;
     margin-top: 10px;
 }
@@ -1023,9 +1024,9 @@ legend {
 }
 
 .project-card {
-    border: 1px solid #3863a0;
+    border: 1px solid #00B57B;
     margin-bottom: 21px;
-    color: #3863a0;
+    color: #00B57B;
 }
 
 .project-card h2 {
@@ -1038,7 +1039,7 @@ legend {
 .project-card li {
     list-style: none;
     margin-top: 10px;
-    color: #3863a0;
+    color: #00B57B;
 }
 
 .project-card .tagsinput {
@@ -1061,7 +1062,7 @@ legend {
 }
 
 .btn-blue-sharp {
-    background-color: #3863a0;
+    background-color: #00B57B;
     color: #FFF !important;
     opacity: 1 !important;
     border: none !important;
@@ -1094,7 +1095,7 @@ legend {
 
 
 .blue-link {
-    color: #3863a0;
+    color: #00B57B;
 }
 
 .blue-link:hover {
@@ -1163,7 +1164,7 @@ legend {
 }
 
 .panel-gray > .panel-heading h3 i {
-    color: #3863a0;
+    color: #00B57B;
     font-size: 28px;
     vertical-align: middle;
     margin-top: -5px;
@@ -1187,8 +1188,8 @@ legend {
 
 .panel-blue > .panel-heading {
     color: #fff;
-    background-color: #3863a0;
-    border-color: #3863a0;
+    background-color: #00B57B;
+    border-color: #00B57B;
     border-radius: 0px;
 }
 
@@ -1197,7 +1198,7 @@ legend {
 }
 
 .panel-blue > .panel-heading h3 i {
-    color: #3863a0;
+    color: #00B57B;
     font-size: 22px;
     vertical-align: middle;
     margin-top: -5px;
@@ -1237,20 +1238,20 @@ legend {
 .main-box {
     padding: 0px;
     padding-bottom: 20px;
-    border: 1px solid #3863A0;
+    border: 1px solid #00B57B;
     margin-top: 10px;
     margin-bottom: 17px;
 }
 
 .main-box h3 {
     padding-left: 10px;
-    color: #3863A0;
+    color: #00B57B;
     font-weight: 300;
     font-size: 23px;
 }
 
 .stats-box {
-    background: #3863A0;
+    background: #00B57B;
     padding-bottom: 10px;
     margin-left: 5px;
     margin-top: 10px;
@@ -1277,7 +1278,7 @@ legend {
 
 .stats-box .project-status {
     background: #fff;
-    color: #3863A0;
+    color: #00B57B;
     font-weight: 300;
     font-size: 19px;
     margin-left: 9px;
@@ -1424,28 +1425,28 @@ legend {
 
 /*PROJECT PAGE CSS START*/
 .project-description-box {
-    border: 1px solid #3863a0;
+    border: 1px solid #00B57B;
     margin-bottom: 20px;
     padding-top: 10px;
     padding-bottom: 5px;
 }
 
 .project-description-box b {
-    color: #3863a0;
+    color: #00B57B;
     font-size: 15px;
 }
 
 .project-description-box h2 {
     font-weight: 300;
     font-size: 42px;
-    color: #3863a0;
+    color: #00B57B;
     text-transform: capitalize;
     margin-top: 0px;
 }
 
 .project-description-box h3 {
     font-weight: 300;
-    color: #3863a0;
+    color: #00B57B;
     text-transform: capitalize;
     font-size: 20px;
 }
@@ -1472,10 +1473,10 @@ legend {
 }
 
 .btn-blue-border {
-    border: 1px solid #3863a0;
+    border: 1px solid #00B57B;
     border-radius: 0px;
     background-color: white;
-    color: #3863a0;
+    color: #00B57B;
 }
 
 .project-description-box hr {
@@ -1485,7 +1486,7 @@ legend {
 }
 
 .project-description-box label {
-    color: #3863a0;
+    color: #00B57B;
     font-weight: 300;
     line-height: 38px;
 }
@@ -1496,16 +1497,16 @@ legend {
 }
 
 .form-control {
-    border: 1px solid #3863A0;
+    border: 1px solid #00B57B;
 }
 
 .input-group-addon {
-    border: 1px solid #3863A0;
-    color: #3863A0;
+    border: 1px solid #00B57B;
+    color: #00B57B;
 }
 .project-description-sidebar{
-    border: 1px solid #3863A0;
-    background:#3863A0;
+    border: 1px solid #00B57B;
+    background:#00B57B;
     padding:10px;
     color:#fff;
 }
@@ -1532,7 +1533,7 @@ legend {
 /*PROJECT PAGE CSS END*/
 /*COMMON CSS START*/
 .blue-border{
-    border: 1px solid #3863a0;
+    border: 1px solid #00B57B;
 }
 .pt10{
     padding-top:10px;
@@ -1562,7 +1563,7 @@ legend {
     margin-bottom:10px;
 }
 .blue-font{
-    color: #3863A0;
+    color: #00B57B;
 }
 .orange-font{
     color: #FC601A;
@@ -1579,7 +1580,7 @@ legend {
 /*COMMON CSS END*/
 
 .milestone-white{
-    background-color: #3863A0;
+    background-color: #00B57B;
     color: #fff;
     border: 1px solid #e2e2e2;
 }
@@ -1668,12 +1669,12 @@ legend {
 }
 
 tags-input .tags{
-    border: 1px solid #3863A0;
+    border: 1px solid #00B57B;
     box-shadow:none;
     -webkit-appearance: none;
 }
 tags-input .tags .tag-item {
-    background: #3863A0;
+    background: #00B57B;
     border: 1px solid #6890C9;
     padding: 0px 11px;
     color: white;
@@ -1683,23 +1684,23 @@ tags-input .tags .tag-item .remove-button{
 }
 .tour-tip{
     padding-right:26px;
-    background: #3863A0 !important;
+    background: #00B57B!important;
 }
 .tour-tip .tour-arrow.tt-top{
-    border-color: #3863A0 transparent transparent transparent !important
+    border-color: #00B57Btransparent transparent transparent !important
 }
 
 .tour-tip .tour-arrow.tt-right{
-    border-color: transparent #3863A0 transparent transparent !important
+    border-color: transparent #00B57Btransparent transparent !important
 }
 .tour-tip .tour-arrow.tt-bottom{
-    border-color: transparent transparent #3863A0  transparent !important
+    border-color: transparent transparent #00B57B transparent !important
 }
 .tour-tip .tour-arrow.tt-left{
-    border-color: transparent transparent  transparent #3863A0 !important
+    border-color: transparent transparent  transparent #00B57B!important
 }
 .tour-tip button, .tour-tip .button{
-    background-color: #F16439;
+    background-color: #000;
 }
 .tour-tip button:hover, .tour-tip .button:hover{
     background-color: #f17d70;
@@ -1717,7 +1718,7 @@ tags-input .tags .tag-item .remove-button{
         min-height: 455px !important;
     }
     .navbar-header .navbar-toggle{
-        background-color: #3863A0 !important;
+        background-color: #00B57B!important;
         padding-left: 8px;
     }
     .btn-lg {
@@ -1740,7 +1741,7 @@ tags-input .tags .tag-item .remove-button{
         width: 50% !important;
     }
     .business-dashboard .nav-pills > li > a{
-        color: #3863A0 !important;
+        color: #00B57B!important;
         padding: 17px 10px !important;
         font-size: 16px !important;
 
@@ -1788,4 +1789,11 @@ tags-input .tags .tag-item .remove-button{
     0% { opacity:1; }
     50% { opacity:0; }
     100% { opacity:1; }
+}
+
+.btn-white{
+    background-color: #FFFFFF;
+    opacity: 1 !important;
+    border: none !important;
+    color: #00B57B !important;
 }

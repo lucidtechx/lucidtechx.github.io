@@ -17,7 +17,7 @@ function initHeader() {
   largeHeader.style.height = height+'px';
 
   canvas = document.getElementById('demo-canvas');
-  canvas.width = width - 80;
+  canvas.width = width - 82;
   canvas.height = height;
   ctx = canvas.getContext('2d');
 
@@ -154,7 +154,7 @@ function drawLines(p) {
     ctx.beginPath();
     ctx.moveTo(p.x, p.y);
     ctx.lineTo(p.closest[i].x, p.closest[i].y);
-    ctx.strokeStyle = 'rgba(156,217,249,'+ p.active+')';
+    ctx.strokeStyle = 'rgba(255,255,255,'+ p.active+')';
     ctx.stroke();
   }
 }
@@ -173,7 +173,7 @@ function Circle(pos,rad,color) {
     if (!_this.active) return;
     ctx.beginPath();
     ctx.arc(_this.pos.x, _this.pos.y, _this.radius, 0, 2 * Math.PI, false);
-    ctx.fillStyle = 'rgba(156,217,249,' + _this.active + ')';
+    ctx.fillStyle = 'rgba(255,255,255,' + _this.active + ')';
     ctx.fill();
   }
 }
@@ -185,8 +185,8 @@ function getDistance(p1, p2) {
 
 $(function(){
   $(".typewriter").typed({
-    strings: ["First sentence.", "Second sentence."],
-    typeSpeed: 0.5,
+    strings: ["It's Time To Launch Your Idea","Get MVP Done Within a Month", "Mobile App/ Web App Development From Scratch."],
+    typeSpeed: 0.1,
     loop: true,
   });
 });
