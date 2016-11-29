@@ -1,0 +1,3 @@
+User-Agent: *
+Allow: /
+Sitemap: http://lucid.tech/sitemap.xml
