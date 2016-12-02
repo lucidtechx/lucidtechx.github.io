@@ -437,8 +437,6 @@ h1,h2,h3,h4{
 }
 
 .card-user .avatar {
-    height: 50px !important;
-    width: 110px !important;
     margin-bottom: 2px !important;
 }
 
