@@ -1,0 +1,396 @@
+<html lang="en" ng-app="eazyFox"  ng-cloak class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lucid.Tech - Mobile/Web App Development & Branding Solutions</title>
+
+    <meta name="description" content="{{ metaservice.metaDescription() }}">
+    <meta name="keywords" content="{{metaservice.metaKeywords() }}"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="/">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/gsdk.css"/>
+    <link rel="stylesheet" href="/assets/css/demo.css"/>
+    <link rel="stylesheet" href="/assets/css/pe-icon-7-stroke.css" />
+    <link rel="stylesheet" href="/assets/css/app.css"/>
+    <link rel="icon" href="assets/img/favicon.png" type="image/gif"
+          sizes="16x16">
+    <!--     Fonts and icons     -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+          rel="stylesheet">
+    <link href='//fonts.googleapis.com/css?family=Grand+Hotel|Open+Sans:400,300'
+          rel='stylesheet' type='text/css'>
+    <style>
+        .navbar-brand span {
+            padding-top: 16px;
+            color: #FC601A !important;
+            font-weight: 300;
+            text-align: right !important;
+            font-size: 14px;
+            float: right;
+            margin-right: -11px;
+        }
+
+        .navbar-kd-blue .navbar-brand span {
+            color: #fff !important;
+            padding-top: 6px;
+            margin-right: 47px;
+            font-size: 13px;
+        }
+
+        .navbar-kd-blue i {
+            display: none;
+        }
+    </style>
+<body class="home">
+<div class="wrapper">
+    <nav class="navbar navbar-ct-azure   navbar-icons navbar-fixed-top navbar-inverse navbar-white "
+         role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target="#navigation-example-2">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">
+
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navigation-example-2">
+
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li>
+                        <a href="/">
+                            <i class="pe-7s-home"></i>
+                            <p>Home</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.confusedbox.com" target="_blank">
+                            <i class="pe-7s-news-paper"></i>
+                            <p>Blogs</p>
+                        </a>
+                    </li>
+                    <li uib-tooltip="Management Questions & Answers"
+                        tooltip-placement="bottom" tooltip-class="blue">
+                        <a href="/works.html">
+                            <i class="pe-7s-box1"></i>
+                            <p>Works</p>
+                        </a>
+                    </li>
+                    <li uib-tooltip="Management Questions & Answers"
+                        tooltip-placement="bottom" tooltip-class="blue">
+                        <a href="/contact.html">
+                            <i class="pe-7s-phone"></i>
+                            <p>Contact Us</p>
+                        </a>
+                    </li>
+
+                   <!--  <li class="dropdown" ng-if="!AuthService.isLoggedIn()">
+                        <a href="javascript:void" class="dropdown-toggle"
+                           data-toggle="dropdown">
+                            <i class="pe-7s-users"></i>
+                            <p>Login
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a ng-href="/business/login">Business Login</a></li>
+                            <li><a ng-href="/expert/login">Expert Login</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown" ng-if="!AuthService.isLoggedIn()">
+                        <a href="javascript:void" class="dropdown-toggle"
+                           data-toggle="dropdown">
+                            <i class="pe-7s-plus"></i>
+                            <p>Sign Up
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/business/sign-up">Business SignUp</a>
+                            </li>
+                            <li><a href="/expert/sign-up">Expert SignUp</a></li>
+                        </ul>
+                    </li> -->
+<!--
+                    <li class="dropdown">
+                        <a href="javascript:void" class="dropdown-toggle"
+                           data-toggle="dropdown">
+                            <i class="pe-7s-user"></i>
+                            <p>Hello
+                                <b class="caret"></b>
+                            </p>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="/expert/dashboard"> Dashboard</a></li>
+                            <li>
+                                <a href="/business/dashboard"> Dashboard</a></li>
+                            <li>
+                                <a href="/expert/dashboard/profile/edit">Edit Profile</a></li>
+                            <li><a href='javascript:void'
+                                   >Logout</a></li>
+                        </ul>
+                    </li> -->
+                </ul>
+
+            </div><!-- /.navbar-collapse -->
+
+        </div><!-- /.container-fluid -->
+    </nav>
+<style>
+    .description h4 {
+        margin-bottom: -3px;
+    }
+
+    .description p {
+        font-size: 21px;
+    }
+</style>
+<div style="clear:both"></div>
+
+<div class="container">
+    <div class="section section-features-1">
+        <div class="container">
+            <h2 class="section-title">
+            </h2>
+            <div class="row">
+                <div class="col-lg-6 kd-cards-2">
+                    <h2>Address</h2>
+                    <p>5th Floor, Diamond District, Domlur<br>
+                        Bangalore, India</p>
+                </div>
+                <div class="col-lg-6 kd-cards-2">
+                    <h2> Get in touch</h2>
+                    <p>contact@lucid.tech <br>
+                        Mob - 8095400267</p>
+                </div>
+
+            </div>
+        </div>
+    </div><!-- section -->
+
+</div>
+
+
+<div class="parallax header question" style="background:#00B57B!important;">
+
+
+    <div class="small-info">
+        <h1>Not ready to start a project yet?</h1>
+        <h3>
+            <small style="font-size:100%;color:#E0E0E0">Subscribe to our
+                newsletter and get up-to-date information from
+                Lucid.Tech.
+            </small>
+        </h3>
+        <br/>
+        <div class="container">
+            <div class="row">
+                <!--<div class="col-md-10 col-md-offset-1">-->
+                    <!--<form class="" ng-submit="subscribeToNewsLetter()"  ng-show="!displaySubscriptionSuccessMsg">-->
+                        <!--<div class="input-group">-->
+                            <!--<input type="text" value="" class="form-control"-->
+                                   <!--placeholder="Enter your email here..."-->
+                                   <!--ng-model="email" required>-->
+                            <!--<div class="input-group-btn">-->
+                                <!--<button type="submit"-->
+                                        <!--ng-disabled="showButtonLoad"-->
+                                        <!--class="btn btn-orange btn-fill btn-block">-->
+                                 <!--Subscribe Now!-->
+                                <!--</button>-->
+                            <!--</div>-->
+
+                        <!--</div>-->
+                    <!--</form>-->
+                <!--</div>-->
+                <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+                <div id="mc_embed_signup" style="background: #00B57B">
+<form action="//bytenub.us14.list-manage.com/subscribe/post?u=f6acf17b7970b3d21678dd0ac&amp;id=e30bae5277" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f6acf17b7970b3d21678dd0ac_e30bae5277" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="background: #FFFFFF;color: black;"></div>
+    </div>
+</form>
+</div>
+
+            </div>
+        </div>
+        <br/>
+
+
+        <br/>
+    </div>
+    <div style="clear:both"></div>
+</div>
+
+
+
+<div class="separator"></div>
+
+
+<footer class="footer footer-big footer-transparent"
+        style="background-image: url('assets/img/o-BUSINESS-MEETING-facebook.jpg')">
+
+    <!-- .footer-black is another class for the footer, for the transparent version, we recommend you to change the url of the image with your favourite image.          -->
+
+    <div class="container">
+        <div class="row" ng-if="location==='/' || location===''">
+            <div class="col-md-5">
+                <h5 class="title">About Lucid.Tech</h5>
+                <p style="font-weight: 300;color: #9A9A9A;">A team of energetic enthusiasts and explorers who always crave for creative innovation.</p>
+
+            </div>
+            <div class="col-md-3 col-md-offset-1">
+                <h5 class="title">Company</h5>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="http://www.confusedbox.com">
+                                Blog
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="works.html">
+                                Works
+                            </a>
+                        </li>
+                        <!--<li>-->
+                            <!--<a href="#">-->
+                                <!--Terms & Conditions-->
+                            <!--</a>-->
+                        <!--</li>-->
+                        <!--             <li>
+                                         <a href="#">
+                                             About Us
+                                         </a>
+                                     </li>-->
+                        <!--<li>
+                            <a href="#" class="text-info">
+                                We are hiring!
+                            </a>
+                        </li>-->
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-md-3">
+                <h5 class="title">Happy people</h5>
+                <nav class="numbers">
+                    <ul>
+                        <li>
+                            <h4><span class="count">40</span> +
+                                <small>Businesses</small>
+                            </h4>
+                        </li>
+                        <li>
+                            <h4><span class="count">10</span> +
+                                <small>Experts</small>
+                            </h4>
+                        </li>
+                        <li>
+                            <h4><span class="count">30</span>
+                                <small>Live Projects</small>
+                            </h4>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!-- <p ng-if="location!=='/' || location!==''" class="text-center"
+            style="color:#666"> "Some Random Quote" ~ Vivek</p>-->
+        <br/>
+        <hr style="margin-top:0px" ng-if="location==='/' || location===''"/>
+        <div class="social-area text-center">
+            <h5>We are social</h5>
+            <a href="https://www.facebook.com/bytenub/"
+               target="_blank"  class="btn btn-social btn-round">
+                <i class="fa fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com/EazyFoxIN"
+               target="_blank" class="btn btn-social btn-round">
+                <i class="fa fa-twitter"></i>
+            </a>
+            <a href="https://plus.google.com/110988392785009288148/posts?hl=en-GB"
+               target="_blank" class="btn btn-social btn-round">
+                <i class="fa fa-google-plus"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/eazyfox"
+               target="_blank" class="btn btn-social btn-round">
+                <i class="fa fa-linkedin"></i>
+            </a>
+        </div>
+
+        <div class="copyright">
+            &copy; 2016 Lucid.Tech
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
+<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="assets/js/app.js" ></script>
+<script src='/assets/js/gsdk-morphing.js'></script>
+<script src='/assets/js/jquery-ui.custom.min.js'></script>
+<script src='/assets/js/gsdk-bootstrapswitch.js'></script>
+<script src='/assets/js/bootstrap-select.js'></script>
+<script src='/assets/js/bootstrap-datepicker.js'></script>
+<script src='/assets/js/chartist.min.js'></script>
+<script src='/assets/js/get-shit-done.js'></script>
+<script src='/assets/js/demo.js'></script>
+<script src='/assets/js/jquery.sticky-kit.min.js'></script>
+<script src='/assets/js/TweenLite.min.js'></script>
+<script src='/assets/js/EasePack.min.js'></script>
+<script src='/assets/js/typed.min.js'></script>
+
+
+<script type="text/javascript">
+    var big_image;
+    $(document).ready(function () {
+        responsive = $(window).width();
+
+        $(window).on('scroll', gsdk.checkScrollForBlueNavbar);
+
+        if (responsive >= 768) {
+            big_image = $('.parallax-image').find('img');
+
+            $(window).on('scroll', function () {
+                parallax();
+            });
+        }
+    });
+    var parallax = function () {
+        var current_scroll = $(this).scrollTop();
+
+        oVal = ($(window).scrollTop() / 3);
+        big_image.css('top', oVal);
+    };
+
+</script>
